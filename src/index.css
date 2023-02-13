@@ -101,7 +101,7 @@
     text-align: justify;
 }
 .skills-parent{
-    margin-top: -900px;
+    margin-top: -700px;
     width: 100%;
     justify-content: center;
 }
@@ -117,4 +117,37 @@
     margin-left: auto;
     margin-right: auto;
     color: #03F0FF;
+}
+
+.card{
+    width: 380px;
+
+}
+.card:hover{
+    border-top: 1px solid #03F0FF;
+    color: #03F0FF;
+
+}
+.SkillsGrid{
+    padding-top: 5%;
+    padding-left: 8%;
+}
+.skills-title{
+    color: #03F0FF;
+    font-family: 'Fira Code';
+}
+.project-gird{
+
+    padding-top: 5%;
+}
+.projects-parent{
+    width: 100%;
+    justify-content: center;
+    transition: ease-in-out all 0.5s;
+}
+.project-cards{
+    font-family: 'Fira Code';
+    color: #03F0FF;
+    transition: ease-in-out all 0.5s;
+
 }
