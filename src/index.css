@@ -3,28 +3,27 @@
     src: local("FiraCode"),
     url("./fonts/FiraCode-Regular.ttf") format("truetype");
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 #root, body {
-    background-color: #222020;
-    margin: 60px;
-
+    color: var(--body-color);
+    background: #222020 url(https://robertsspaceindustries.com/rsi/static/images/gridbg_glow.png) repeat;
+}
+.margin-main{
+    margin-left: 60px;
 }
 
 .main-container {
-
     font-weight: normal;
     font-family: "Fira Code";
     margin-top: 10%;
     font-size: 30px;
-
-
 }
 
 .main-header {
     color: white;
-
 }
 
 .main-name {
@@ -37,28 +36,85 @@
     color: #858585;
 }
 
-.secondary-container{
-    width: 600px;
+.secondary-container {
+    display: inline-block;
+    width: 100% !important;
+
 }
-.button{
+
+.button {
     margin-top: 5%;
     -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 38%, 100% 80%, 100% 100%, 17% 100%, 0 62%, 0 0);
     clip-path: polygon(20% 0%, 80% 0%, 100% 38%, 100% 80%, 100% 100%, 17% 100%, 0 62%, 0 0);
     background-color: black;
-    padding: 44px;
     width: 300px;
     height: 120px;
     box-shadow: inset -6px -5px 0px 0px rgb(3 240 255);
     padding: 38px;
     color: #03F0FF;
     font-weight: normal;
-    font-family: "Fira Code";
+    font-family: "Fira Code", serif;
     font-size: 32px;
+    transition: ease all 0.5s;
+
 
 }
-.h1-main{
+
+.button:hover {
+    box-shadow: inset 6px 5px 0px 0px rgb(3 240 255);
+}
+
+.h1-main {
     color: #03F0FF;
 }
-.span-main{
+
+.span-main {
     color: white;
+
+}
+
+.stats-group {
+    margin-top: 5%;
+    color: #03F0FF;
+    font-family: "Fira Code";
+}
+
+.section2 {
+    height: 880px;
+    background-color: black;
+    border-top: solid 1px #03F0FF;
+    border-bottom: solid 1px #03F0FF;
+    margin-top: -300px;
+}
+.about-me-title{
+    font-weight: bold;
+    font-size: 36px;
+
+}
+.about-me{
+    color: #03F0FF ;
+    font-size: 32px;
+    padding:40px;
+    font-weight: normal;
+    font-family: "Fira Code";
+    overflow: scroll;
+    text-align: justify;
+}
+.skills-parent{
+    margin-top: -900px;
+    width: 100%;
+    justify-content: center;
+}
+.skills{
+   text-align: center !important;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+    color: #03F0FF;
 }
